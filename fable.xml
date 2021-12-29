@@ -1,6 +1,152 @@
 <fable>
-	<page>
-  
+	<page background="gelofundo.png">
+     <agent text="Bem-Vindos ao Mundo sem luz!" x="20" y="460" font-size="21" />
+     <agent text="Vivemos em um mundo onde as florestas são escuras..."   x="20" y="400" width="300" on-touch="story2">
+      	<story2 text="Os desertos tantos gelados e secos são vastos...neste mundo nâo há esperança...  há mostro por todas as partes..." on-touch="story3" />
+      	<story3 text="entretranto uma jovem caçadoura que teve seu pet roubado pelo clan um da sua região. "touch="story4 " />
+      	
+     </agent>
+     <agent img="b_F_signA"  x="100" y="100" width="50" height="50"/>
+     
+		 <agent img="chao1.jpeg" x="0"   y="0" width="101"  height="100"/>
+		 <agent img="chao1.jpeg" x="100" y="0" width="101" height="100" />
+		 <agent img="chao1.jpeg" x="200" y="0" width="101" height="100" />
+		 <agent img="chao1.jpeg" x="300" y="0" width="101" height="100" />
+		 <agent img="chao1.jpeg" x="400" y="0" width="101" height="100" />
+    
+     <agent img="b_F_signA.png"  x="430" y="120" width="50"  height="50" on-touch="_NEXT_PAGE"/>
+     <agent img="icon1.png"      x="200" y="90"  width="80" height="110"/>
+  </page>
+ 
+	<page background="gelofundo2.png">
+     <agent text="oh um poço de lava!" x="20" y="460" font-size="21" />
+     <agent text="Clique no poço de lava para utilizar a magia de gelo..."   x="20" y="400" width="300" on-trigger="gelo-ativa">
+      	<gelo-ativa text="toque na placa para continuar." />
+      
+     </agent>
+
+     <agent img="lava2.png"          x="300" y="0" width="101" height="90" on-touch="gelo-ativa">
+       <gelo-ativa img="lago1.jpeg"  x="300" y="0" width="101" height="90" />
+       
+     
+     </agent>
+    
+
+     <agent img="lava2.png"          x="200" y="0" width="101" height="90" on-touch="gelo-ativa">
+       <gelo-ativa img="lago1.jpeg"  x="200" y="0" width="101" height="90" />
+       
+     
+     </agent>
+    
+		 <agent img="chao1.jpeg"         x="0"   y="0" width="101"  height="100"/>
+		 <agent img="chao1.jpeg"         x="100" y="0" width="101" height="100" />
+		 <agent img="chao1.jpeg"         x="400" y="0" width="101" height="100" />
+     
+     
+     <agent img="b_F_signA.png"  x="430" y="100" width="50"  height="50" on-touch="_NEXT_PAGE"/>/>
+     <agent img="icon1.png"      x="80" y="100"  width="80" height="110"/>
     
   </page>
+  
+	<page background="forest.jpg">
+    <agent 
+      text="Mais um desafio um desfio pela frente desta vez um Mostro...." font-size="18" color="white" x="20" y="450" 
+      width="400" on-trigger="derota"> 
+    
+    	<derota text="O caminhos está livre!" />
+    </agent>
+    
+    <agent 
+      text="a placa está logo depois do monstro" 
+      x="20" y="400" color="white" width="300" on-trigger="derota">
+    
+    	<derota y="410" text="Toque na placa para prosseguir na jornada" />
+  
+    </agent>
+
+    <agent img="b_ashlandrock1.png" x="0" y="0" width="101" height="101" />
+    <agent img="b_ashlandrock1.png" x="100" y="0" width="101" height="101" />
+    <agent img="b_ashlandrock1.png" x="200" y="0" width="101" height="101" />
+    <agent img="b_ashlandrock1.png" x="300" y="0" width="101" height="101" />
+    <agent img="b_ashlandrock1.png" x="400" y="0" width="101" height="101" />
+
+     <agent img="icon1.png"      x="80" y="100"  width="80" height="110"/>
+    
+    <agent img="b_F_signA.png" x="400" y="100" width="50" height="50" on-touch="_NEXT_PAGE" />
+     <agent img="orc051.png" x="250" y="100" width="250" height="250" on-touch="derota">
+      <derota img="chamas.png" x="320" width="75" height="75" />
+    </agent>
+  
+  </page>
+  
+  <page background="forest.jpg">
+    
+    <agent text="Oh não! um novo obstaculo pela frente..." font-size="21" x="20" y="450" color="white" width="400"/> 
+    <agent text="sua magia de gelo não fuciona na floresta porem há uma espada no chao usse para corta o sipó." font-size="15" x="20" y="400" color="white" width="400"/> 
+
+    <agent img="b_F_signA.png"  x="430" y="100" width="50"  height="50" on-touch="_NEXT_PAGE"/>
+    
+    <agent img="chipo.png" x="400"   y="75" width="100"  height="200" drop-zone="cut-espada">
+     
+      <cut-espada x="-500"/>
+      
+       
+    </agent>
+    
+    
+     <agent img="espada.png" x="200"   y="100" width="50"  height="75" draggable="true" on-drop="cut-espada"/>
+    
+		 <agent img="chao8.png" x="0"   y="0" width="101"  height="100"/>
+		 <agent img="chao8.png" x="100" y="0" width="101" height="100" />
+		 <agent img="chao8.png" x="200" y="0" width="101" height="100" />
+		 <agent img="chao8.png" x="300" y="0" width="101" height="100" />
+		 <agent img="chao8.png" x="400" y="0" width="101" height="100" />
+    
+    
+    <agent img="icon1.png"  x="80"  y="100"  width="80" height="110"/>
+     
+  
+   
+  </page>
+  
+  <page background="flore3.jpg">
+    
+    <agent text="Ele está logo depois do ostaculo" font-size="18" x="20" y="450" color="white" width="400"/> 
+    <agent img="abobora.png"  x="430" y="100" width="100"  height="100" on-touch="_NEXT_PAGE"/>
+    
+    <agent img="orc051.png" x="200"   y="75" width="150"  height="200" drop-zone="cut-espada">
+     
+      <cut-espada x="-500"/>
+      
+       
+    </agent>
+    
+    
+     <agent img="espada.png" x="25"   y="100" width="50"  height="75" draggable="true" on-drop="cut-espada"/>
+    
+		 <agent img="chao8.png" x="0"   y="0" width="101"  height="100"/>
+		 <agent img="chao8.png" x="100" y="0" width="101" height="100" />
+		 <agent img="chao8.png" x="200" y="0" width="101" height="100" />
+		 <agent img="chao8.png" x="300" y="0" width="101" height="100" />
+		 <agent img="chao8.png" x="400" y="0" width="101" height="100" />
+    
+    
+    <agent img="icon1.png"  x="80"  y="100"  width="80" height="110"/>
+     
+  
+   
+  </page>
+ 
+  <page background="flore3.jpg">
+    
+    <agent img="fss.png"   x="100"   y="300" width="50"  height="75" draggable="true" />
+    <agent img="iiiii.png" x="200"   y="300" width="50"  height="75" draggable="true" />
+    <agent img="mccc.png"  x="300"   y="300" width="50"  height="80" draggable="true" />
+    
+    
+   
+   
+  </page>
+  
+
 </fable>
